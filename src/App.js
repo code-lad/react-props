@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import VueDev from './components/VueDev';
+import ReactDev from './components/ReactDev'
 
+const person = {name:'Wonderboy', phone:'067 023 8089', email:'wonderboy@gmail.com'}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      < Header />
+      <div className="container">
+      <VueDev name={person.name} phone={person.phone} email={person.email}/>
+      < ReactDev 
+      name = {person.name}
+      phone = {person.phone}
+      email = {person.email}
+      />
+      </div>
     </div>
   );
 }
-
+  
 export default App;
