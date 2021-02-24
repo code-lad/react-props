@@ -1,17 +1,17 @@
 import './App.css';
 import Header from './components/Header';
-import Profile from './components/Profile';
-import Details from './components/Details'
+import List from './components/List';
+import Fruits from './components/Fruits';
 
 function App() {
-const PersonData = Details.map(item => <Profile Person ={item}/>)
+const FruitsList = Fruits.map(list => <List Fruit = {list}/>) 
   return (
     <div className="App">
       <header>
-      < Header / >
+      <Header/>
       </header>
       <div className="container">
-        {PersonData}
+      {FruitsList}
       </div>
     </div>
   );
