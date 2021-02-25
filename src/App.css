@@ -1,4 +1,4 @@
-.App .container {
+.App .Cont {
   display: flex;
   justify-content: center;
 }
@@ -8,13 +8,18 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 .Header .logo img {
   width: 90px;
 }
 
-/* Profile Component styling */
-.List {
+/* Post Component styling */
+
+.Post {
+  border: 1px solid #000;
+  width: 500px;
   padding: 10px;
+  margin: 10px;
 }
