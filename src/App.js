@@ -1,18 +1,14 @@
 import './App.css';
-import Header from './components/Header';
-import Post from './components/Post';
-import Users from './components/Users';
+import Header from './Components/Header';
+import Count from './Components/Count'
 function App() {
-const UsersPost = Users.map(posts => <Post posts={posts}/>)
   return (
     <div className="App">
       <header>
       <Header/>
       </header>
-      <div className="Cont">
-        <div className="Posts">
-            {UsersPost}
-        </div>
+      <div className="Container">
+        <Count/>
       </div>
     </div>
   );

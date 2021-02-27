@@ -1,4 +1,4 @@
-.App .Cont {
+.App .Container {
   display: flex;
   justify-content: center;
 }
@@ -16,10 +16,3 @@
 }
 
 /* Post Component styling */
-
-.Post {
-  border: 1px solid #000;
-  width: 500px;
-  padding: 10px;
-  margin: 10px;
-}
